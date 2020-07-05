@@ -1,16 +1,16 @@
 <template>
     <div id="app">
-        <home-page></home-page>
+        <router-view></router-view>
     </div>
 </template>
 
 <script>
-    import HomePage from "@/components/pages/HomePage";
+    // import HomePage from "@/components/pages/HomePage";
 
     export default {
         name: 'App',
         components: {
-            HomePage,
+            // HomePage,
         }
     }
 </script>
@@ -19,6 +19,10 @@
     * {
         margin: 0;
         font-family: proxima, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+        height: 100vh;
     }
 
     #app {

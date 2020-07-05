@@ -8,6 +8,15 @@ import { far } from "@fortawesome/free-regular-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
+import VueRouter from "vue-router";
+import router from "./plugins/router";
+
+import axios from "axios";
+import VueAxios from "vue-axios";
+
+Vue.use(VueRouter);
+Vue.use(VueAxios, axios);
+
 library.add(fas);
 library.add(far);
 library.add(fab);
@@ -17,4 +26,5 @@ Vue.config.productionTip = false;
 
 new Vue({
   render: h => h(App),
+  router
 }).$mount('#app');
